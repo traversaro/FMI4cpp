@@ -79,16 +79,9 @@ set(FMI4CPP_EXPORT_TARGET "${PROJECT_NAME}-targets")
 # ==============================================================================
 
 find_package(LIBZIP REQUIRED)
+find_package(pugixml REQUIRED)
 
 Include(FetchContent)
-
-FetchContent_Declare(
-        pugixml
-        GIT_REPOSITORY https://github.com/zeux/pugixml.git
-        GIT_TAG        v1.12.1
-)
-
-FetchContent_MakeAvailable(pugixml)
 
 # ==============================================================================
 # Targets
